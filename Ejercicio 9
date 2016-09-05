@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+using namespace std;
+
+main(){
+int a,contador=0;
+while((a=getchar())!=EOF){
+    if(a!=' '){
+        putchar(a);
+        contador=0;
+    }
+    else{
+        if(contador==0){
+            putchar(a);
+            contador=1;
+        }
+    }
+}

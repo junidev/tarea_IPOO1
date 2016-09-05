@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+using namespace std;
+
+main()
+{
+int a,espacios=0,recorrido=0,nuevalinea=0;
+while((a=getchar())!=EOF){
+    if(a==' '){
+        espacios+=1;
+    }
+    else{
+        if(a=='\t'){
+            recorrido+=1;
+        }
+        else{
+            if(a=='\n'){
+                nuevalinea+=1;
+            }
+        }
+    }
+}
+printf("%d%d%d",espacios,recorrido,nuevalinea);
+}
